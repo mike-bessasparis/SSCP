@@ -4,10 +4,63 @@
              android:layout_height="match_parent"
              tools:context="com.bessasparis.mike.sscp.QuestionFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment"/>
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="question"
+                android:textSize="@dimen/abc_text_size_headline_material"/>
+
+            <Button
+                android:id="@+id/answerchoice1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choice1"/>
+
+            <Button
+                android:id="@+id/answerchoice2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choice2"/>
+
+            <Button
+                android:id="@+id/answerchoice3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choice3"/>
+
+            <Button
+                android:id="@+id/answerchoice4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="choice4"/>
+
+            <TextView
+                android:id="@+id/feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/abc_text_size_display_3_material"/>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:textSize="@dimen/abc_text_size_headline_material"
+                />
+        </LinearLayout>
+    </ScrollView>
+
 
 </FrameLayout>
