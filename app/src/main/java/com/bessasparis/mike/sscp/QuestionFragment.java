@@ -60,6 +60,11 @@ public class QuestionFragment extends Fragment {
 
     }
 
+    public void displayQuestion(String mstr) {
+
+        questionText.setText(mstr);
+
+    }
 
 
 
