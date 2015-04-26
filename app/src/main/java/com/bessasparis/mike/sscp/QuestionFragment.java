@@ -53,19 +53,17 @@ public class QuestionFragment extends Fragment {
 
     }
 
-    //accept json question object
+    //accept json question object, displays question and choices
     public void displayQuestion(JSONObject qObject) throws JSONException {
 
-       questionText.setText(qObject.getString("questiontext"));
+        questionText.setText(qObject.getString("questiontext"));
+        choice1.setText(qObject.getString("answerchoice1"));
+        choice2.setText(qObject.getString("answerchoice2"));
+        choice3.setText(qObject.getString("answerchoice3"));
+        choice4.setText(qObject.getString("answerchoice4"));
+
 
     }
-
-    public void displayQuestion(String mstr) {
-
-        questionText.setText(mstr);
-
-    }
-
 
 
 }
