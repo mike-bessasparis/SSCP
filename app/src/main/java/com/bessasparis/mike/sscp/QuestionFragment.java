@@ -1,6 +1,7 @@
 package com.bessasparis.mike.sscp;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -25,6 +26,7 @@ public class QuestionFragment extends Fragment {
     Button choice3;
     Button choice4;
     TextView feedbackText;
+    View V;
 
 
     public QuestionFragment() {
@@ -36,7 +38,7 @@ public class QuestionFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View V = inflater.inflate(R.layout.fragment_question, container, false);
+        V = inflater.inflate(R.layout.fragment_question, container, false);
 
         //get ui element views
         questionText = (TextView) V.findViewById(R.id.question);
@@ -62,8 +64,45 @@ public class QuestionFragment extends Fragment {
         choice3.setText(qObject.getString("answerchoice3"));
         choice4.setText(qObject.getString("answerchoice4"));
 
+        V.findViewById(R.id.answerchoice1).setOnClickListener(feedbackWrong);
+        V.findViewById(R.id.answerchoice2).setOnClickListener(feedbackWrong);
+        V.findViewById(R.id.answerchoice3).setOnClickListener(feedbackWrong);
+        V.findViewById(R.id.answerchoice4).setOnClickListener(feedbackWrong);
+
+        switch(qObject.getInt("answer")) {
+            case 1:
+                V.findViewById(R.id.answerchoice1).setOnClickListener(feedbackCorrect);
+                break;
+            case 2:
+                V.findViewById(R.id.answerchoice2).setOnClickListener(feedbackCorrect);
+                break;
+            case 3:
+                V.findViewById(R.id.answerchoice3).setOnClickListener(feedbackCorrect);
+                break;
+            case 4:
+                V.findViewById(R.id.answerchoice4).setOnClickListener(feedbackCorrect);
+                break;
+        }
 
     }
 
+
+    private View.OnClickListener feedbackCorrect = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            TextView feedbackText = (TextView) V.findViewById(R.id.feedback);
+            feedbackText.setText("CORRECT");
+            feedbackText.setTextColor(Color.GREEN);
+        }
+    };
+
+    private View.OnClickListener feedbackWrong = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            TextView feedbackText = (TextView) V.findViewById(R.id.feedback);
+            feedbackText.setText("WRONG");
+            feedbackText.setTextColor(Color.RED);
+        }
+    };
 
 }
