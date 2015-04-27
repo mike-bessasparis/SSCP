@@ -28,11 +28,9 @@ public class QuestionFragment extends Fragment {
     TextView feedbackText;
     View V;
 
-
     public QuestionFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -47,12 +45,9 @@ public class QuestionFragment extends Fragment {
         choice3 = (Button) V.findViewById(R.id.answerchoice3);
         choice4 = (Button) V.findViewById(R.id.answerchoice4);
         feedbackText = (TextView) V.findViewById(R.id.feedback);
-
         feedbackText.setText("");
 
-
         return V;
-
     }
 
     //accept json question object, displays question and choices
@@ -63,6 +58,7 @@ public class QuestionFragment extends Fragment {
         choice2.setText(qObject.getString("answerchoice2"));
         choice3.setText(qObject.getString("answerchoice3"));
         choice4.setText(qObject.getString("answerchoice4"));
+        feedbackText.setText("");
 
         V.findViewById(R.id.answerchoice1).setOnClickListener(feedbackWrong);
         V.findViewById(R.id.answerchoice2).setOnClickListener(feedbackWrong);
@@ -83,9 +79,7 @@ public class QuestionFragment extends Fragment {
                 V.findViewById(R.id.answerchoice4).setOnClickListener(feedbackCorrect);
                 break;
         }
-
     }
-
 
     private View.OnClickListener feedbackCorrect = new View.OnClickListener() {
         @Override
@@ -95,7 +89,6 @@ public class QuestionFragment extends Fragment {
             feedbackText.setTextColor(Color.GREEN);
         }
     };
-
     private View.OnClickListener feedbackWrong = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
@@ -104,5 +97,4 @@ public class QuestionFragment extends Fragment {
             feedbackText.setTextColor(Color.RED);
         }
     };
-
 }
