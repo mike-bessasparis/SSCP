@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="quiz_pref">
+        <item>ports</item>
+        <item>questions</item>
+    </string-array>
+    <string-array name="quiz_pref_values">
+        <item>ports</item>
+        <item>questions</item>
+    </string-array>
+</resources>
