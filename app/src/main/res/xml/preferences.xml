@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
-    <!--<ListPreference-->
-        <!--android:key="pref_quizType"-->
-        <!--android:title="Select a Quiz Type"-->
-        <!--android:entries="@array/quiz_pref"-->
-        <!--android:entryValues="@array/quiz_pref_values"-->
-        <!--android:defaultValue="questions" />-->
+    <ListPreference
+        android:key="pref_quizType"
+        android:title="Select a Quiz Type"
+        android:entries="@array/quiz_pref"
+        android:entryValues="@array/quiz_pref_values"
+        android:defaultValue="questions" />
 
 
     <CheckBoxPreference
