@@ -33,6 +33,7 @@ public class MainActivity extends ActionBarActivity {
         //set quiz preference default
         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
 
+
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.next).setOnClickListener(nextButtonHandler);
