@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/container"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:paddingLeft="4dp"
+              android:paddingRight="4dp"
+              android:paddingTop="4dp"
+              android:paddingBottom="4dp"
+              tools:context=".MainActivity"
+              tools:ignore="MergeRootFrame">
+
+    <fragment
+        android:name="com.bessasparis.mike.sscp.QuestionFragment"
+        android:id="@+id/question_fragment"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:id="@+id/next"
+        android:text="Next"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+</LinearLayout>
