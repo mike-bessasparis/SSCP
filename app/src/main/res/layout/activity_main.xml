@@ -17,7 +17,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next"
-        android:textSize="@dimen/abc_text_size_headline_material"
-        />
+        android:textSize="@dimen/abc_text_size_headline_material"/>
 
 </LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              tools:context="com.bessasparis.mike.sscp.QuestionFragment">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/question"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="question"/>
+
+        <TextView
+            android:id="@+id/feedback"
+            android:textSize="36sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="feedback"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/answerchoice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice1"/>
+
+        <Button
+            android:id="@+id/answerchoice2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice2"/>
+
+        <Button
+            android:id="@+id/answerchoice3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice3"/>
+
+        <Button
+            android:id="@+id/answerchoice4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choice4"/>
+
+    </LinearLayout>
+
+</LinearLayout>
