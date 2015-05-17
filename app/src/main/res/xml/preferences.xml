@@ -2,17 +2,31 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
     <ListPreference
         android:key="pref_quizType"
-        android:title="Select a Quiz Type"
+        android:title="Select a Quiz Type - ONLY ONE."
         android:entries="@array/quiz_pref"
         android:entryValues="@array/quiz_pref_values"
         android:defaultValue="questions" />
 
-
     <CheckBoxPreference
         android:key="pref_ports"
-        android:title="pref_ports"
-        android:summary="Check for ports. Clear for questions."
+        android:title="Ports"
         android:defaultValue="true" />
+    <CheckBoxPreference
+        android:key="pref_fundamentals"
+        android:title="Fundamentals"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:key="pref_cryptography"
+        android:title="Cryptography"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:key="pref_accessControls"
+        android:title="Access Controls"
+        android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:key="pref_auditing"
+        android:title="Auditing"
+        android:defaultValue="false"/>
 
 
 </PreferenceScreen>

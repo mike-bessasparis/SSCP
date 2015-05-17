@@ -62,25 +62,43 @@ public class MainActivity extends ActionBarActivity {
 
     //really a bad KLUDGE.  can't get the list array of values to work in display XML
     private String getDataFileName() {
-        String mStr = "";
+        switch (getQuizType()) {
+            case "access":
+                return "access-controls.json";
+            case "audit":
+                return "auditing.json";
+            case "crypto":
+                return "cryptography.json";
+            case "fund":
+                return "fundamentals.json";
+            case "ports":
+                return "ports.json";
+        }
+        return "error";
+    }
 
-        //read shared pref
+    private String getQuizType() {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        Boolean quizTypePref = sharedPref.getBoolean("pref_ports", true);
+        Boolean quizTypeAccess = sharedPref.getBoolean("pref_accessControls", false);
+        Boolean quizTypeAudit = sharedPref.getBoolean("pref_auditing", false);
+        Boolean quizTypeCrypto = sharedPref.getBoolean("pref_cryptography", false);
+        Boolean quizTypeFund = sharedPref.getBoolean("pref_fundamentals", false);
+        Boolean quizTypePorts = sharedPref.getBoolean("pref_ports", false);
 
-        Log.i("mjb", "Quiz Type Pref: "+quizTypePref);
-
-        if (quizTypePref == true) {
-            Log.i("mjb", "ports");
-            mStr = "ports.json";
+        if (quizTypeAccess) {
+            return "access";
         }
-        if (quizTypePref == false) {
-            Log.i("mjb", "questions");
-            mStr = "questions.json";
+        if (quizTypeAudit) {
+            return "audit";
         }
-
-        Log.i("mjb", "getdatafile: "+mStr);
-        return mStr;
+        if (quizTypeCrypto) {
+            return "crypto";
+        }
+        if (quizTypeFund) {
+            return "fund";
+        } else {
+            return ("ports");
+        }
     }
 
     private View.OnClickListener nextButtonHandler = new View.OnClickListener() {
