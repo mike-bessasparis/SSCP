@@ -71,6 +71,8 @@ public class MainActivity extends ActionBarActivity {
                 return "cryptography.json";
             case "fund":
                 return "fundamentals.json";
+            case "networks":
+                return "networks-and-telecom.json";
             case "ports":
                 return "ports.json";
         }
@@ -83,8 +85,12 @@ public class MainActivity extends ActionBarActivity {
         Boolean quizTypeAudit = sharedPref.getBoolean("pref_auditing", false);
         Boolean quizTypeCrypto = sharedPref.getBoolean("pref_cryptography", false);
         Boolean quizTypeFund = sharedPref.getBoolean("pref_fundamentals", false);
+        Boolean quizTypeNetworks = sharedPref.getBoolean("pref_netAndTelecom", false);
         Boolean quizTypePorts = sharedPref.getBoolean("pref_ports", false);
 
+        if (quizTypeNetworks) {
+            return "networks";
+        }
         if (quizTypeAccess) {
             return "access";
         }

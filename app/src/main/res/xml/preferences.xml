@@ -27,6 +27,10 @@
         android:key="pref_auditing"
         android:title="Auditing"
         android:defaultValue="false"/>
+    <CheckBoxPreference
+        android:key="pref_netAndTelecom"
+        android:title="Networks and Telecom"
+        android:defaultValue="false"/>
 
 
 </PreferenceScreen>
