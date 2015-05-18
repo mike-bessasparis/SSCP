@@ -1,0 +1,188 @@
+{
+  "questions": [
+    {
+      "questiontext": "What OSI layer is FTP",
+      "answerchoice1": "Session",
+      "answerchoice2": "Application",
+      "answerchoice3": "Data Link",
+      "answerchoice4": "Network",
+      "answer": 2
+    },
+    {
+      "questiontext": "What OSI layer is RADIUS, TACACS+",
+      "answerchoice1": "Session",
+      "answerchoice2": "Application",
+      "answerchoice3": "Data Link",
+      "answerchoice4": "Network",
+      "answer": 1
+    },
+    {
+      "questiontext": "What OSI layer is SONET, ATM, DSL",
+      "answerchoice1": "Session",
+      "answerchoice2": "Physical",
+      "answerchoice3": "Data Link",
+      "answerchoice4": "Network",
+      "answer": 2
+    },
+    {
+      "questiontext": "What OSI layer is end-to-end reliability",
+      "answerchoice1": "Session",
+      "answerchoice2": "Transport",
+      "answerchoice3": "Data Link",
+      "answerchoice4": "Network",
+      "answer": 2
+    },
+    {
+      "questiontext": "What OSI layer is convert data",
+      "answerchoice1": "Session",
+      "answerchoice2": "Application",
+      "answerchoice3": "Presentation",
+      "answerchoice4": "Network",
+      "answer": 3
+    },
+    {
+      "questiontext": "What OSI layer is ARP, PPP, SLIP?",
+      "answerchoice1": "Session",
+      "answerchoice2": "Application",
+      "answerchoice3": "Data Link",
+      "answerchoice4": "Network",
+      "answer": 3
+    },
+    {
+      "questiontext": "S/MIME integrity?",
+      "answerchoice1": "DSA, 3DES, RSA",
+      "answerchoice2": "MD5, DSA, SHA-1, X.509",
+      "answerchoice3": "DSA, RSA, X.509",
+      "answerchoice4": "DSA, RSA",
+      "answer": 2
+    },
+    {
+      "questiontext": "S/MIME authentication?",
+      "answerchoice1": "DSA, 3DES, RSA",
+      "answerchoice2": "MD5, DSA, SHA-1, X.509",
+      "answerchoice3": "DSA, RSA, X.509",
+      "answerchoice4": "DSA, RSA",
+      "answer": 3
+    },
+    {
+      "questiontext": "S/MIME confidentiality?",
+      "answerchoice1": "DSA, 3DES, RSA",
+      "answerchoice2": "MD5, DSA, SHA-1, X.509",
+      "answerchoice3": "DSA, RSA, X.509",
+      "answerchoice4": "DES, RSA, RC4, D-H",
+      "answer": 4
+    },
+    {
+      "questiontext": "S/MIME non-repudiation?",
+      "answerchoice1": "DSA, 3DES, RSA",
+      "answerchoice2": "MD5, DSA, SHA-1, X.509",
+      "answerchoice3": "DSA, RSA, X.509",
+      "answerchoice4": "DSA, RSA",
+      "answer": 4
+    },
+    {
+      "questiontext": "Credit card details?",
+      "answerchoice1": "DSA, 3DES, RSA",
+      "answerchoice2": "MD5, DSA, SHA-1, X.509",
+      "answerchoice3": "DSA, RSA, X.509",
+      "answerchoice4": "SET",
+      "answer": 4
+    },
+    {
+      "questiontext": "PAP?",
+      "answerchoice1": "Authentication",
+      "answerchoice2": "Identifcation",
+      "answerchoice3": "Confidentiality",
+      "answerchoice4": "Non-repudiation",
+      "answer": 1
+    },
+    {
+      "questiontext": "3-way handshake repeated during session?",
+      "answerchoice1": "PAP",
+      "answerchoice2": "CHAP",
+      "answerchoice3": "EAP",
+      "answerchoice4": "TACACS+",
+      "answer": 2
+    },
+    {
+      "questiontext": "Framework?",
+      "answerchoice1": "PAP",
+      "answerchoice2": "CHAP",
+      "answerchoice3": "EAP",
+      "answerchoice4": "TACACS+",
+      "answer": 3
+    },
+    {
+      "questiontext": "54Mbps, OFDM, 5GHz?",
+      "answerchoice1": "802.11a",
+      "answerchoice2": "802.11b",
+      "answerchoice3": "802.11g",
+      "answerchoice4": "802.11i",
+      "answer": 1
+    },
+    {
+      "questiontext": "11Mbps, DSSS, 2.4GHz?",
+      "answerchoice1": "802.11a",
+      "answerchoice2": "802.11b",
+      "answerchoice3": "802.11g",
+      "answerchoice4": "802.11i",
+      "answer": 2
+    },
+    {
+      "questiontext": "54Mbps, OFDM, 2.4GHzM?",
+      "answerchoice1": "802.11a",
+      "answerchoice2": "802.11b",
+      "answerchoice3": "802.11g",
+      "answerchoice4": "802.11i",
+      "answer": 3
+    },
+    {
+      "questiontext": "amendment, interference, Euro?",
+      "answerchoice1": "802.11h",
+      "answerchoice2": "802.11b",
+      "answerchoice3": "802.11g",
+      "answerchoice4": "802.11i",
+      "answer": 1
+    },
+    {
+      "questiontext": "Encryption?",
+      "answerchoice1": "802.11a",
+      "answerchoice2": "802.11b",
+      "answerchoice3": "802.11g",
+      "answerchoice4": "802.11i",
+      "answer": 4
+    },
+    {
+      "questiontext": "600Mbps, MIMO, dynamic freq?",
+      "answerchoice1": "802.11a",
+      "answerchoice2": "802.11n",
+      "answerchoice3": "802.11g",
+      "answerchoice4": "802.11i",
+      "answer": 2
+    },
+    {
+      "questiontext": "copying data?",
+      "answerchoice1": "Bluejacking",
+      "answerchoice2": "Bluesnarfing",
+      "answerchoice3": "Bluebugging",
+      "answerchoice4": " ",
+      "answer": 2
+    },
+    {
+      "questiontext": "issue AT commands?",
+      "answerchoice1": "Bluejacking",
+      "answerchoice2": "Bluesnarfing",
+      "answerchoice3": "Bluebugging",
+      "answerchoice4": " ",
+      "answer": 3
+    },
+    {
+      "questiontext": "sending unwanted messages?",
+      "answerchoice1": "Bluejacking",
+      "answerchoice2": "Bluesnarfing",
+      "answerchoice3": "Bluebugging",
+      "answerchoice4": " ",
+      "answer": 1
+    }
+  ]
+}
