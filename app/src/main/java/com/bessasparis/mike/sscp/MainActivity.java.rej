@@ -1,0 +1,9 @@
+diff a/app/src/main/java/com/bessasparis/mike/sscp/MainActivity.java b/app/src/main/java/com/bessasparis/mike/sscp/MainActivity.java	(rejected hunks)
+@@ -33,6 +33,7 @@
+         //set quiz preference default
+         PreferenceManager.setDefaultValues(this, R.xml.preferences, false);
+ 
++
+         setContentView(R.layout.activity_main);
+ 
+         findViewById(R.id.next).setOnClickListener(nextButtonHandler);

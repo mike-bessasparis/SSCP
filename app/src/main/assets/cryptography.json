@@ -101,7 +101,7 @@
             "answerchoice2": "RSA",
             "answerchoice3": "IDEA",
             "answerchoice4": "ECC",
-            "answer": 3},
+            "answer": 2},
         {"questiontext": "Asym, signatures, 224-256 hash?",
             "answerchoice1": "DSA",
             "answerchoice2": "RSA",
